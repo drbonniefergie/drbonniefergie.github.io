@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'futura_roundregular';
+    src: url('futura_round-webfont.woff2') format('woff2'),
+         url('futura_round-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abc_diatype_unlicensed_triaRg';
+    src: url('abcdiatype-regular-trial-webfont.woff2') format('woff2'),
+         url('abcdiatype-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abc_diatype_unlicensed_triaBd';
+    src: url('abcdiatype-bold-trial-webfont.woff2') format('woff2'),
+         url('abcdiatype-bold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
