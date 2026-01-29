@@ -14,59 +14,190 @@
  
 </head>
 
-<body>
-  <main class="page wrap">
-    <header class="head">
-      <h1>Dr. Bonnie Fergie</h1>
-      <div class="role">Dermatologist</div>
-    </header>
+  <body>
+    <!-- TOP SECTION: sticky image is constrained to this section -->
+    <main class="page">
+      <section class="bio">
+        <div class="bio-grid">
+          <aside class="bio-media">
+            <!-- Use your attached image path -->
+            <img src="assets/bonnie-portrait-2.jpg" alt="Portrait" />
+          </aside>
 
-    <section class="content">
-      <!-- Left: Portrait -->
-      <div class="portrait">
-        <!-- Replace with your image -->
-        <img src="assets/bonnie-portrait.jpg" alt="Dr. Bonnie Fergie portrait">
-      </div>
+          <article class="bio-content">
+			  <div class="bio-content-inner">
+            <h1>DR BONNIE FERGIE</h1>
+            <div class="subtitle">DERMATOLOGIST</div>
 
-      <!-- Right: Copy -->
-      <div class="copy">
-        <p>
-          Dr Bonnie Fergie is a leading, experienced consultant dermatologist in Sydney, practicing across all areas of dermatology.
-        <br/><br/>
-          Entering specialist dermatology training early in her medical career, Bonnie brings over a decade of clinical dermatology experience, having treated tens of thousands of patients impacted by Australia’s unforgiving conditions.
-       <br/><br/>
-          Originally from country Western Australia, Bonnie is well known among the patient and referring doctor community for her expertise and kind patient manner.
-     <br/><br/>
-          Bonnie is the founder of new Australian skincare brand <a href="https://www.bonelliot.com" target="_blank" aria-label="Bon Elliot">Bon Elliot</a>, launching in March 2026, bringing her informed perspective on how the skin’s physiology defines its outer form.
-        </p>
+            <h2>ABOUT</h2>
+            <p>
+              Dr Bonnie Fergie is a leading, experienced consultant dermatologist in Sydney, practicing across all
+              areas of dermatology.
+            </p>
+            <p>
+              Entering specialist dermatology training early in her medical career, Bonnie brings over a decade of
+              clinical dermatology experience, having treated tens of thousands of patients impacted by Australia’s
+              unforgiving conditions.
+            </p>
+            <p>
+              Originally from country Western Australia, Bonnie is well known among the patient and referring doctor
+              community for her expertise and kind patient manner.
+            </p>
+            <p>
+              Bonnie’s approach to practice emanates from her own understanding that the health and appearance of
+              one’s skin is a deeply personal journey closely impacting confidence and wellbeing. Her advice and
+              treatment are grounded in personalised, precise and advanced evidence-based care.
+            </p>
+            <p>
+              Bonnie is the founder of new Australian skincare brand Bon Elliot, launching in March 2026, bringing
+              her informed perspective on how the skin’s physiology defines its outer form.
+            </p>
 
-        <div class="copySection">
-          <h2>Specialist training / publications</h2>
-          <p>
-            Bonnie undertook specialist dermatology training in New South Wales at St Vincent’s Hospital Sydney, The Skin Hospital Sydney, Canberra Hospital, The Royal Newcastle Hospital / John Hunter Hospital and The Orange Base Hospital.
-         <br/><br/>
-            Bonnie is a published author in peer-reviewed journals and has presented at national and international dermatology conferences.
-          </p>
+		
+			<div class="quote" aria-label="Testimonials">
+			  <div class="quote-row">
+			    
+
+			    <div class="quote-body" role="group" aria-roledescription="carousel" aria-live="polite">
+			      <p class="quote-text" id="quoteText"></p>
+			      <div class="byline" id="quoteByline"></div>
+			    </div>
+				
+			    <button class="quote-arrow" type="button" data-dir="-1" aria-label="Previous quote">
+			      &#8592;
+			    </button>
+
+			    <button class="quote-arrow" type="button" data-dir="1" aria-label="Next quote">
+			      &#8594;
+			    </button>
+			  </div>
+
+			
+			</div>
+
+            <h2>EXPERIENCE</h2>
+            <p>
+              Dr Bonnie Fergie is a fellow of the Australasian College of Dermatologists with over a decade of
+              practice in clinical dermatology.
+            </p>
+            <p>
+              Bonnie has extensive experience in all areas of medical and cosmetic dermatology with special interest
+              in skin cancer, rosacea, acne, eczema, psoriasis, laser and hair loss, combined with a deep knowledge
+              of skincare and daily skin management.
+            </p>
+            <p>
+              Following her medical doctor internship and residency, Bonnie completed 4 years of specialist
+              dermatology training at leading teaching hospitals in New South Wales including St Vincent’s Hospital
+              Sydney, The Skin Hospital Sydney, Canberra Hospital, The John Hunter Hospital and The Orange Base
+              Hospital.
+            </p>
+            <p>
+              Bonnie is a published author and reviewer in peer-reviewed journals and has presented at national and
+              international dermatology conferences, including recent research into the microbiome, barrier and
+              antioxidant response of the skin.
+            </p>
+
+            <div class="meta">
+              <h2>PRACTICE</h2>
+              <p>Bonnie currently practice by appointment at <a href="#">Drummoyne Dermatology</a><br/>
+			  Drummoyne Dermatology<br/>
+              Suite 1, 109 Victoria Road<br/>
+              Drummoyne NSW 2047<br/>
+              +61 2 9719 2621</p>
+            </div>
+			</div>
+			
+          </article>
         </div>
+      </section>
+    </main>
 
-        <div class="copySection">
-          <h2>Qualifications / memberships</h2>
-          <ul class="list">
-            <li>MBBS, FACD</li>
-            <li>Fellow of Australasian College of Dermatologists</li>
-            <li>International Fellow of American Academy of Dermatology</li>
-            <li>Women’s Dermatologic Society</li>
-          </ul>
-        </div>
+    <!-- BOTTOM SECTION: when this scrolls up, it naturally pushes the sticky image away -->
+	<section class="quoteHero" aria-label="Bon Elliot statement section">
+	  <!-- Background image -->
+	  <img class="quoteHero__bg" src="assets/bottom_bg.jpg" alt="" aria-hidden="true" />
 
-        <div class="copySection">
-          <h2>Practice</h2>
-          <div>
-            Bonnie currently practice by appointment at <a href="https://www.drummoynedermatology.com.au/about-us/dermatologists/dr-bonnie-fergie/" target="_blank" aria-label="Drummoyne Dermatology">Drummoyne Dermatology</a>.
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+	  <!-- Centered content -->
+	  <div class="quoteHero__content">
+	    
+		
+			<div class="quoteHero__logo">
+	      	  <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health" />
+	    	</div>
+
+	    	<p class="quoteHero__lead">
+	      Bonnie is the founder of new Australian skincare brand Bon Elliot, launching in March 2026.
+	           <br/><br/>
+	      “As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel.
+		  	<br/><br/>
+	        As a skincare user with sensitive skin, my search has been for evidence-based, high-performance formulas that
+	        prioritise precision over excess, are easy to use and that I look forward to wearing.
+	     <br/><br/>
+	        Bon Elliot was designed as a considered evolution in skincare — honoring the maxim of form follows function.”
+			  <br/><br/>
+		  	<a href="https://bonelliot.com" target="_blank" aria-label="Bon Elliot">BONELLIOT.COM</a>	
+	      	</p>
+	    </div>
+		
+
+	  </div>
+	</section>
+  </body>
+  
+  <script>
+    // 10 quotes (edit these however you like)
+    const QUOTES = [
+      { text: "Dr Bonnie Fergie is an angel in disguise. Great communicator and very human.", by: "Dane C." },
+      { text: "Thorough, kind, and incredibly knowledgeable. I felt listened to the whole time.", by: "Patient A." },
+      { text: "Clear plan, evidence-based, and reassuring. Best dermatology consult I’ve had.", by: "Patient B." },
+      { text: "Warm bedside manner and meticulous attention to detail.", by: "Patient C." },
+      { text: "Explained everything in a way that made sense—no rushing, no pressure.", by: "Patient D." },
+      { text: "My skin improved dramatically with the treatment plan. Highly recommend.", by: "Patient E." },
+      { text: "Professional, compassionate, and results-focused.", by: "Patient F." },
+      { text: "Excellent with sensitive skin—tailored advice that actually worked.", by: "Patient G." },
+      { text: "I appreciated the honesty and precision. Felt in very safe hands.", by: "Patient H." },
+      { text: "A calm, expert approach that made a stressful issue feel manageable.", by: "Patient I." },
+    ];
+
+    const textEl = document.getElementById("quoteText");
+    const bylineEl = document.getElementById("quoteByline");
+    const dotsEl = document.querySelector(".quote-dots");
+    const arrows = document.querySelectorAll(".quote-arrow");
+
+    let index = 0;
+
+    function renderDots() {
+      dotsEl.innerHTML = "";
+      QUOTES.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.className = "quote-dot" + (i === index ? " is-active" : "");
+        dotsEl.appendChild(dot);
+      });
+    }
+
+    function renderQuote() {
+      const q = QUOTES[index];
+      textEl.textContent = `“${q.text}”`;
+      bylineEl.textContent = q.by;
+      renderDots();
+    }
+
+    function move(dir) {
+      index = (index + dir + QUOTES.length) % QUOTES.length;
+      renderQuote();
+    }
+
+    arrows.forEach((btn) => {
+      btn.addEventListener("click", () => move(parseInt(btn.dataset.dir, 10)));
+    });
+
+    // Optional: keyboard support (left/right arrows)
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") move(-1);
+      if (e.key === "ArrowRight") move(1);
+    });
+
+    renderQuote();
+  </script>
+  
 </html>
