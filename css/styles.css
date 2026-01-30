@@ -278,7 +278,6 @@ p {
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  padding: 40px 20px;
   color: rgba(255, 255, 255, 0.88);
 }
 
@@ -336,4 +335,9 @@ a {
   .quoteHero__quote {
     font-size: 12px;
   }
+  
+  .quoteHero__content {
+	  width:300px;
+  }
+
 }
