@@ -108,12 +108,17 @@ h1 {
 }
 
 .subtitle {
-  margin: 0 0 26px;
+  margin-bottom: 28vh;
   font-family: 'abc_diatype_unlicensed_triaBd';
   font-size: 11px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #000;
+}
+@media (max-width: 500px) { 
+	.subtitle {
+	  margin-bottom: 10vh;
+  }
 }
 
 h2 {
@@ -140,8 +145,7 @@ p {
 
 /* Quote carousel styling (works with your existing .quote styles) */
 .quote {
-  margin: 92px 0;
-  padding: 18px 0;
+  margin: 10vh 0;
 }
 
 .quote-row {
@@ -259,6 +263,21 @@ p {
   }
 }
 
+@media (max-width: 500px) {
+	
+	.bio-content-inner {
+		margin-top:20px;
+	}
+
+  .bio-media {
+    height: 500px;
+  }
+
+  .bio-media img {
+    height: 60vh;
+  }
+}
+
 /* ---------- Quote Hero ---------- */
 
 .quoteHero {
@@ -273,7 +292,7 @@ p {
 
 .quoteHero__content {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -327,6 +346,8 @@ a {
 
 /* ---------- Quote Hero Responsive ---------- */
 
+
+
 @media (max-width: 520px) {
   .quoteHero__logo img {
     height: 30px;
@@ -342,5 +363,11 @@ a {
 
   .bio-content {
 	  margin: 0px 20px;
+  }
+  
+  .quoteHero {
+  	background: url("../assets/bottom_bg.jpg") center / 800px 900px no-repeat;
+  	  position: relative;
+  	  height: 100vh;
   }
 }
