@@ -231,7 +231,7 @@ p {
 
 .meta p {
   margin: 0 0 6px;
-  font-size: 13px;
+  font-size: 12px;
   color: #222;
 }
 
@@ -292,7 +292,7 @@ p {
 
 .quoteHero__content {
   position: absolute;
-  top: 51%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
