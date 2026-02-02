@@ -3,730 +3,192 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bon Elliot — Skin Health</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="fonts/stylesheet.css" />
-  <link rel="icon" href="assets/favicon.ico" sizes="any">
- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
- <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <title>Dr. Bonnie Fergie</title>
+
+   <link rel="stylesheet" href="css/styles.css" />
+   <link rel="stylesheet" href="fonts/stylesheet.css" />
+   <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+ 
 </head>
 
+  <body>
+    <!-- TOP SECTION: sticky image is constrained to this section -->
+    <main class="page">
+      <section class="bio">
+        <div class="bio-grid">
+          <aside class="bio-media">
+            <!-- Use your attached image path -->
+            <img src="assets/bonnie-portrait.jpg" alt="Portrait" />
+          </aside>
 
-<body>
-   
-	<!-- Password Gate Overlay -->
-	<div class="gate" id="gate" aria-hidden="false">
-        
-	  <div class="gate__backdrop"></div>
-     
-     <div class="gate-logo">
-       <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health">
-     </div>
-	  
-	  <div class="gate__panel" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
-		  
-		  
-	    <h2 id="gateTitle" class="gate__title">Enter password for access</h2>
+          <article class="bio-content">
+			  <div class="bio-content-inner">
+            <h1>DR BONNIE FERGIE</h1>
+            <div class="subtitle">DERMATOLOGIST</div>
 
-	    <form class="gate__form" id="gateForm">
-	      <label class="sr-only" for="gatePassword">Enter password</label>
-	      <input
-	        id="gatePassword"
-	        type="password"
-	        placeholder="Password"
-	        autocomplete="current-password"
-	        required
-	      />
-	      <button type="submit">Enter</button>
-	    </form>
-
-	    <div class="gate__error" id="gateError" aria-live="polite"></div>
-	  </div>
-	</div>
-	 <!-- 
-	<div class="mini-window-container">
-    <div class="mini-window">
-		<div class="mini-image">
-   	   	 <img src="assets/Carousel1.jpg" alt="Hydrating Performance Serum">
-	    </div>
-		<div class="mini-copy">
-   	     <p>Thank you for being the first to try the Hydrating Performance Serum.</p>
-		     </div>
-    </div>
-	-->
-</div>
-	
-	
-  <!-- HERO (100% viewport height + background video) -->
-  <header class="hero">
-
-    
-    <!-- Replace the src with your real video file(s). Keep muted+playsinline for autoplay on mobile. -->
-    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="">
-      <source src="assets/hero.mp4" type="video/mp4" />
-      <source src="assets/hero.webm" type="video/webm" />
-    </video>
-    <div class="hero__overlay" aria-hidden="true"></div>
-  
-    <div class="wrap hero__content">
-      <div class="hero__brand">
-        <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health">
-      </div>
-
-      <div class="hero__headline">
-        <h1>A New Model for Skin Health</h1>
-        <p>High Performance Easywear — with AMBR Complex<span>™</span></p>
-      </div>
-
-      <div class="hero__meta">
-        <div>Dermatologist Founded</div>
-        <div>Made in Sydney, Australia</div>
-      </div>
-	  
-      
-    </div>
-  </header>
-
-  <main>
-    <!-- Intro strip -->
-    <section class="intro">
-      <div class="wrap">
-        <div class="intro__grid">
-          <div class="intro_copy">
-			  
+            <h2>ABOUT</h2>
             <p>
-			  Form follows function.
-            </p>
-			
-            <p>
-            The skin is an intelligent and self-regulating living system. Its physiology defines its outer form. 
-            </p>
-			
-            <p>
-			  Exposure to sun, pollution, stress and harsh cosmetics cause dysregulation of the skin’s natural health networks, resulting in increasingly damaged and sensitive skin.
-            </p>
-            
-			<p> 
-				Our patent pending AMBR Complex<span>™</span> is designed to rebalance the microbiome, barrier and repair response. Skin becomes self-optimising, resilient and adaptable. For peak function and form.
-		   </p>
-		   
-		    <p> 
-			  A new model for skin health.
-		    </p>
-          </div>
-		  
-		  <div class="intro_logo">
-	     	 	<video class="" autoplay muted loop playsinline preload="metadata" poster="">
-	       			<source src="assets/BELOGOBlack_1.mp4" type="video/mp4" />
-	       			<source src="assets/BELOGOBlack_1.webm" type="video/webm" />
-	     		</video>
-	 		</div>
-        </div>
-
-        <div class="dividerLabel">INTRODUCING OUR FIRST RELEASE:<br/>A high performance multitasking serum for day or night</div>
-      </div>
-    </section>
-
-    <!-- Product section (carousel + copy) -->
-    <section class="product">
-      <div class="wrap">
-        <div class="product__grid">
-          <div class="frame" aria-label="Product image carousel">
-            <div class="carousel" id="productCarousel">
-              <!-- Replace these with your real product images -->
-              <img class="is-active" src="assets/Carousel1.jpg" alt="Hydrating Performance Serum" />
-              <img src="assets/Carousel2.jpg" alt="Hydrating Performance Serum alternate view" />
-              <img src="assets/Carousel3.jpg" alt="Hydrating Performance Serum packaging" />
-			  <img src="assets/Carousel4.jpg" alt="Hydrating Performance Serum packaging" />
-			  <img src="assets/Carousel5.jpg" alt="Hydrating Performance Serum packaging" />
-            </div>
-          </div>
-
-          <div class="product__copy">
-            <h2>Hydrating Performance Serum</h2>
-            <div class="sub">with AMBR Complex<span>™</span><br/>$220</div>
-
-            <p>
-             A powerful, deeply hydrating performance serum engineered to visibly improve the skin's appearance.
+              Dr Bonnie Fergie (MBBS, FACD) is an experienced Australian board-certified dermatologist based in Sydney.
             </p>
             <p>
-              With new bioretinoid alternative, intelligent peptides and proven actives for multitasking high luminosity,
-              even skin tone and elasticity. Silky lightweight moisturising feel.
+              Having entered specialist dermatology training early in her medical career, Bonnie brings over a decade of clinical dermatology practice, helping tens of thousands of patients with skin impacted by the unforgiving Australian conditions.
             </p>
-            
-            <div class="label">Key benefits</div>
-            <div class="pills" aria-label="Key benefits">
-              <span class="pill">Hydration</span>
-			  <span class="pill">Luminosity</span>
-              <span class="pill">Tone</span>
-              <span class="pill">Elasticity</span>              
-              <span class="pill">Texture</span>
-            </div>
+            <p>
+              Originally from country Western Australia, Bonnie is sought after among the patient and referring doctor community for her expertise and kind patient manner.
+            </p>
+            <p>
+              Bonnie’s approach emanates from her understanding that the health and appearance of one’s skin is a deeply personal journey. Her advice and treatment are grounded in personalised and precise evidence-based care.
+            </p>
+            <p>
+              Bonnie is the founder of new Australian skincare brand Bon Elliot, launching in March 2026, bringing her informed perspective on how the skin’s physiology defines it outer form.
+            </p>
 
-            <div class="label">User results</div>
-            <ul class="list">
-              <li><b>100%</b>  improves the overall health and appearance of my skin</li>
-              <li><b>97%</b> keeps my skin hydrated throughout the day</li>
-			  <li><b>94%</b> increases firmness and elasticity of my skin</li>
-              <li><b>97%</b> improves the texture of my skin, feels smoother and softer</li>
-			   
-            </ul>
-			
-           <a href="#" class="link" data-modal="#resultsModal">
-              Clinical Trial Results
-              <span aria-hidden="true">+</span>
-            </a>
-
-            <div class="label">Performance ingredients</div>
-            <div class="twoCol">
-              <ul class="ingredientList">
-                <li>AMBR Complex<span>™</span></li>
-                <li>Bioretinoid alternative</li>
-                <li>Peptides</li>
-                <li>Vitamin C</li>
-              </ul>
-              <ul class="ingredientList">
-                <li>Niacinamide</li>
-                <li>Hyaluronic acid</li>
-                <li>Hexylresorcinol</li>
-              </ul>
-            </div>
-
-           <a href="#" class="link" data-modal="#ingredientsModal">
-              Ingredient Information<span aria-hidden="true">+</span>
-            </a>
-			
-			
-            <div class="label">Easywear Formulation</div>
-            <div class="twoCol">
-              <ul class="ingredientList">
-                <li>Dermatologist created</li>
-                <li>High-graded ingredients</li>
-                <li>Optimised concentrations</li>
-                <li>Advanced delivery systems</li>
-              </ul>
-              <ul class="ingredientList">
-                <li>Fragrance-free</li>
-                <li>Non-comedogenic</li>
-                <li>For sensitive skin</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	
-
-	<!-- Modal 1 -->
-	<div class="modal" id="resultsModal" aria-hidden="true">
-	  <div class="modal__backdrop" data-close></div>
-	  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="resultsTitle">
-	    <button class="modal__close" data-close aria-label="Close">×</button>
-	    <h3 id="resultsTitle">Clinical Trial Results</h3>
-	    	<p>International independent laboratory conducted in vivo clinical trial: 30 participants, 8 weeks duration.</p>
-
-			<div class="label">USER RESULTS</div>
-            <ul class="list">
-              <li><b>100%</b> improves the overall health and appearance of my skin</li>
-              <li><b>97%</b> keeps my skin hydrated throughout the day</li>
-			  <li><b>87%</b> keeps my skin luminous throughout the day</li>
-              <li><b>87%</b> improves the appearance of uneven skin tone</li>   
-              <li><b>97%</b>  improves the texture of my skin, feels smoother and softer</li>
-              <li><b>94%</b> keeps my skin hydrated throughout the day</li>
-			  <li><b>97%</b> increases the firmness and elasticity of my skin</li>
-              <li><b>100%</b> keeps my skin looking healthy throughout the day</li>
-            </ul>
-			
-			<div class="label">CLINICAL INSTRUMENTAL RESULTS</div>
-            <ul class="clinicalsList">
-              <li>Hydration significantly increased by <b>+51.1%</b><br/>Instrumentation: Corneometer®CM825</li>
-             <li>Luminosity significantly increased by <b>+25.9%</b><br/>Instrumentation: Glossymeter® GL 200</li>
-			 <li>Elasticity significantly increased by <b>+14.3%</b><br/>Instrumentation: Cutometer®MPA58 </li>
-			 <li>Tone (visible spots) significantly decreased by <b>-10.1%</b><br/>Instrumentation: Visia-CRP-5 Primos</li>
-            </ul>
-			
-			<div class="label">SAFETY TESTING</div>
-            <ul class="clinicalsList">
-              <li>Human Repeat Insult Patch Test<br/>
-				  Protocol No.: CP-01.01S<br/>
-				  56 subject panel, Fitzpatrick I-VI</li>
-             <li>Ocular Safety Test <br/>
-				 MatTek In Vitro EpiocularTM Eye Irritation Test <br/>
-				 OCL-200-EIT OECD 492</li>
-			 <li>Stability Testing<br/>
-				 Monthly: T0 - 6 months<br/>
-				 pH, appearance, odour, colour
-			 </li>
-			 <li>Preservative Efficacy Testing<br/>
-				 USP51 - Category 2<br/>
-				 T0, T14, T28 days</li>
-            </ul>
-			
-			
-	  </div>
-	</div>
-
-	<!-- Modal 2 -->
-	<div class="modal" id="ingredientsModal" aria-hidden="true">
-	  <div class="modal__backdrop" data-close></div>
-	  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="ingredientsTitle">
-	    <button class="modal__close" data-close aria-label="Close">×</button>
-	    
-		<h3 id="ingredientsTitle">Ingredient Information</h3>
- 			<div class="label">Performance Ingredients</div>
-             <ul class="ingredientsModalList">
-               <li><b>AMBR Complex<span>™</span></b><br/>Our proprietary combination of pre and probiotics, skin identical ceramides and optimised antioxidants designed to rebalance the skin's natural health networks. For self optimising, resilient and adaptable skin. 
-</li>
-			   <li>
-			      <b>Bioretinoid alternative</b><br>
-			      New generation microalgae derived bioretinoid acts as a natural retinoic acid analogue, with liposomal encapsulation for enhanced delivery. For effective cell regulation and renewal without irritation.
-			    </li>
-
-			    <li>
-			      <b>Peptides</b><br>
-			      Intuitive peptides selectively act on neuronal cellular signalling pathways, reducing SNARE protein formation to soften the appearance of lines. For improved texture and firmness.
-			    </li>
-
-			    <li>
-			      <b>Vitamin C</b><br>
-			      The gold standard of vitamin C for sensitive skin: AA2G (Ascorbal Glucaside). A stabilised, controlled release form of vitamin C, highly effective at non-irritating pH and concentrations (unlike L-Ascorbic acid). For maximal luminosity without irritation.
-			    </li>
-
-			    <li>
-			      <b>Niacinamide</b><br>
-			      High-graded niacinamide contains the purest form of the vitamin B3 molecule, without the elevated amounts of micro inflammatory nicotinic acid found in lower grade forms of niacinamide. For skin clarity and resilience.
-			    </li>
-
-			    <li>
-			      <b>Hyaluronic acid</b><br>
-			      Multi-weight hyaluronic acid attracts and binds water molecules to hydrate throughout the layers of the epidermis from superficial to deep. For immediate and lasting hydration.
-			    </li>
-
-			    <li>
-			      <b>Hexylresorcinol</b><br>
-			      Powerful antioxidant protects against free radical damage and glycation (the process of sugar molecules damaging collagen and elastin) at a cellular level. For firming and evening skin tone.
-			    </li>
-
-			    <li>
-			      <b>Licorice root</b><br>
-			      Natural antioxidants including Licochalcone A protect against free radical damage at a cellular level, reducing erythema, dryness and inflammation. For calmer skin.
-			    </li>
-
-			    <li>
-			      <b>Squalane</b><br>
-			      Olive-derived squalane mimics the skin’s own natural moisturising factors, readily incorporated into the stratum corneum for building and strengthening the barrier. For increased hydration and protection.
-			    </li>
-
-			    <li>
-			      <b>Panthenol</b><br>
-			      Provitamin B5 derivative promotes epidermal cell regulation and lipid synthesis, reinforcing the skin barrier and reducing trans epidermal water loss. For soothed skin.
-			    </li>
-            
-             </ul>
-			 
-			 <div class="label">Full Ingredient List</div>
-			 <p class="fullIngredientsList">
-				Aqua (Water, Eau), Niacinamide, Glycerin, Squalane, Ascorbyl Glucoside, Arachidyl Alcohol, Glyceryl Stearate Citrate, Hexylresorcinol, Ectoin, Panthenol, Caprylic/Capric Triglyceride, Potassium Cetyl Phosphate, Ethoxydiglycol, Palmitoyl SH-Hexapeptide-11 SP Amide, Palmitoyl SH-Hexapeptide-19 SP Amide, Lactobacillus Plantarum Ferment Lysate, Taraxacum Officinale Leaf Extract, Chlorella Vulgaris Extract, Sodium Hyaluronate, Ceramide NP, Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Serine, Tocopheryl Acetate, Tocopherol, Dipotassium Glycyrrhizate, Pullulan, Jojoba Esters, Algin, Lactic Acid/Glycolic Acid Copolymer, Lactic Acid, Helianthus Annuus Seed Oil, Butyrospermum Parkii Butter, Aloe Barbadensis Leaf Juice Powder, Ethylhexylglycerin, Urea, Behenyl Alcohol, Carbomer, Isododecane, Dehydroacetic Acid, Arachidyl Glucoside, Trehalose, Propanediol, Butylene Glycol, Sodium Lauroyl Lactylate, Glyceryl Stearate, Cetyl Alcohol, Stearyl Alcohol, 1,2-Hexanediol, Benzyl Alcohol, Pentylene Glycol, Sodium Stearoyl Glutamate, Aminomethyl Propanol, Xanthan Gum, Glucose, Lecithin, Polyvinyl Alcohol, Glyceryl Polyacrylate, Caprylyl Glycol, Polysilicone-11, Disodium Phosphate, Polyglyceryl-3, Potassium Phosphate, Glyceryl Caprylate, Phenylpropanol, Phenoxyethanol.
-		     </p>
-	  
-	  </div>
-	</div>
-	
-    <!-- 2ND VIDEO  -->
-
-	       <section class="secondVideo">
-
-	    <div class="videoCard" aria-label="Science section video background with text overlay">
-	      <!-- Replace with your actual mp4/webm files -->
-	      <video autoplay muted loop playsinline preload="metadata" poster="">
-	        <source src="assets/table.mp4" type="video/mp4" />
-	        <source src="assets/table.webm" type="video/webm" />
-	      </video>
-		  
-		  <div class="overlay2">
-		    <!-- Top eyebrow -->
-		    <div class="overlay__top">
-		      <div class="eyebrowTop">
-		        OUR SCIENCE:<br>
-		        PHYSIOLOGY DEFINES OUTER FORM
-		      </div>
-		    </div>
-
-		    <!-- Centered content -->
-		    <div class="overlay__center">
-		      <div class="overlay__inner2">
-		        <div class="scienceTitle">INTRODUCING AMBR COMPLEX™</div>
-
-		        <div class="scienceBody">
-		          <p>Recent advances in research have shown us how the skin’s natural health networks – the microbiome, barrier and repair response – exist in a dynamic, symbiotic relationship. 
-					  <br/><br/>
-		          AMBR Complex<span>™</span> is anchored in this powerful physiology.
-				  <br/><br/>
-		         Our proprietary combination of pre and probiotics, skin identical ceramides and optimised antioxidants is designed to create a healthy microbiome, strengthen the skin barrier and reduce the harmful effects of reactive oxygen species caused by environmental damage. For peak function and form.
-				 <br/><br/>
-		          Dermatologist created. Grounded in research. Tested with Next Generation gene sequencing technology. Proven by international independent clinical trials.</p>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-	         
-	    </div>
 		
-	</section>
+			<div class="quote" aria-label="Testimonials">
+			  <div class="quote-row">
+			    
 
+			    <div class="quote-body" role="group" aria-roledescription="carousel" aria-live="polite">
+			      <p class="quote-text" id="quoteText"></p>
+			      <div class="byline" id="quoteByline"></div>
+			    </div>
+				
+			    <button class="quote-arrow" type="button" data-dir="-1" aria-label="Previous quote">
+			      &#8592;
+			    </button>
 
-	
-	
-
-    <!-- Bottom strip -->
-    <section class="bottom">
-      <div class="wrap">
-		  
-	            <div class="fineprint-holder-mobile">
-        
-	  		    <div class="fineprint_1_mobile">
-				 
-	   			 <div class="label">INTRODUCING BON ELLIOT</div><br/>
-	  			   Founded by Australian board-certified dermatologist Dr Bonnie Fergie alongside a family team working across Sydney and New York, Bon Elliot brings a future-facing lens to skincare, occupying a unique space at the intersection of dermatology and new luxury.<br/><br/>
-				  
-				  <div><a href="#" class="link" data-modal="#brandModal">Behind the brand<span aria-hidden="true">+</span></a></div>
-	  			  <br/><br/>
-		 
-	   			 <div class="label">A NOTE FROM BON</div><br/>
-	  			  As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel. 
-	  			  <br/><br/>
-	  			 As a skincare user with sensitive skin, my search has been for evidence-based, high-performance formulas that prioritise precision over excess, are easy to use and that I look forward to wearing.
-	  			  <br/><br/>
-	  			  Bon Elliot was designed as a considered evolution in skincare – honouring the maxim of form follows function.
-	   <br/><br/>
-	  			  Dr Bonnie Fergie<br/>
-	  			  Sydney, 2026
-				  
-				   
-             
-	  			 </div>
-				 </div>
-	   <div class="intro-desktop">
-			 <div class="label">INTRODUCING BON ELLIOT</div>
-		 <p>Founded by Australian board-certified dermatologist Dr Bonnie Fergie alongside a family team working across Sydney and New York, Bon Elliot brings a future-facing lens to skincare, occupying a unique space at the intersection of dermatology and new luxury.
-				 </p>
-				 <div><a href="#" class="brand-link" data-modal="#brandModal">Behind the brand<span aria-hidden="true">+</span></a></div>
-				 
-	     	</div> 
-			  
-        <div class="bottom__grid">
-			
- 			 
-		   
-			
-            <!-- Large BE mark left (like the screenshot) -->
-           <div class="bottom_logo">
-	 	    <img src="assets/BE_Icon.svg" alt="Bon Elliot — Skin Health">
-	 	     </video>
-		   </div>
-		   
-		           
-	
-           <div class="email-signup">
-            
-			<div class="email-headline">
-              <h3>Available for purchase<br/>exclusively in Australia <br/>March 2026</h3>
-            </div>
-			
-		
-
-		  	<div class="email-form">
-			
-			 <form class="signup" id="klaviyoSignup">
-		     <label class="sr-only" for="email">Email address</label>
-		     <input
-		      type="email"
-		      id="email"
-		      name="email"
-		      placeholder="Sign up for first access"
-		      required
-		      />
-		     <button type="submit" value="submit" aria-label="Submit email">↗</button>
-       	    
-			
-			
-	    	</form>
-			<div id="signupMsg" style="margin-top:10px;font-size:12px;color:rgba(15,15,16,.7)"></div>
-			 <div class="instagram"><a href="https://www.instagram.com/bonelliot" target="_blank">Instagram</a></div> 
-			 
+			    <button class="quote-arrow" type="button" data-dir="1" aria-label="Next quote">
+			      &#8594;
+			    </button>
 			  </div>
-       	  
-		  </div>
-		  
-          <div class="fineprint-holder">
-         
-		    <div class="fineprint_1">
-  			
-			 
- 			 <div class="label">A NOTE FROM BON</div><br/>
-			  As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel. 
-			  <br/><br/>
-			 As a skincare user with sensitive skin, my search has been for evidence-based, high-performance formulas that prioritise precision over excess, are easy to use and that I look forward to wearing.
-			  <br/><br/>
-			  Bon Elliot was designed as a considered evolution in skincare – honouring the maxim of form follows function.
- <br/><br/>
-			  Dr Bonnie Fergie<br/>
-			  Sydney, 2026<br/><br/>
-			  
-			  <div class="copyright">&copy; Bon Elliot</div>
-			  
-			  <!-- Lightbox Modal -->
-			 
-              
-			 </div>
+
 			
-		
-          </div>
-		  
+			</div>
+
+            <h2>EXPERIENCE</h2>
+            <p>
+              Dr Bonnie Fergie is a fellow of the Australasian College of Dermatologists.
+            </p>
+            <p>
+              Bonnie has extensive experience in medical and cosmetic dermatology with special interest in skin cancer, rosacea, acne, eczema, psoriasis, laser and hair loss, combined with a deep knowledge of skincare and daily skin management.
+            </p>
+            <p>
+              Following her medical doctor internship and residency, Bonnie completed 4 years of specialist dermatology training at leading teaching hospitals in New South Wales including St Vincent’s Hospital Sydney, The Skin Hospital Sydney, Canberra Hospital, The John Hunter Hospital and The Orange Base Hospital. 
+            </p>
+            <p>
+			  Bonnie is a published author and reviewer in peer-reviewed journals and has presented at national and international dermatology conferences, including recent research into the microbiome, barrier and antioxidant repair response of the skin.
+            </p>
+			
+            <p>
+			  Bonnie is an International Fellow of the American Academy of Dermatologists and Member of the Women’s Dermatologic Society.
+            </p>
+
+            <div class="meta">
+              <h2>PRACTICE</h2>
+              <p>Bonnie currently practice by appointment at <br/>
+			  <a href="#">Drummoyne Dermatology</a><br/>
+              Suite 1, 109 Victoria Road<br/>
+              Drummoyne NSW 2047<br/>
+              +61 2 9719 2621</p>
+            </div>
+			</div>
+			
+          </article>
         </div>
-      </div>
-    </section>
-	
-	
-    <section class="toe">
-      <div class="wrap">
-	  	<div class="copyright-Mobile">&copy; Bon Elliot</div>
-		  
-   	   <div class="toeLogo">
-		     <img src="assets/BE_Icon.svg" alt="Bon Elliot — Skin Health">
-	  	   
-   		</div>
+      </section>
+    </main>
+
+    <!-- BOTTOM SECTION: when this scrolls up, it naturally pushes the sticky image away -->
+	<section class="quoteHero" aria-label="Bon Elliot statement section">
+	  <!-- Background image -->
+	  
+
+	  <!-- Centered content -->
+	  <div class="quoteHero__content">
+	    
 		
-	      </div>
+			<div class="quoteHero__logo">
+	      	  <img src="assets/BonElliotLockup.svg" alt="Bon Elliot — Skin Health" />
+	    	</div>
+
+	    	<p class="quoteHero__lead">
+	      Bonnie is the founder of new Australian skincare brand Bon Elliot, launching in March 2026.
+	           <br/><br/>
+	      “As a dermatologist, I commonly see damaged and sensitive skin being addressed by cosmetic treatments without reference to the skin’s physiology, responsible for so much of what we see and feel.
+		  	<br/><br/>
+	        As a skincare user with sensitive skin, my search has been for evidence-based, high-performance formulas that
+	        prioritise precision over excess, are easy to use and that I look forward to wearing.
+	     <br/><br/>
+	        Bon Elliot was designed as a considered evolution in skincare — honoring the maxim of form follows function.”
+			  <br/><br/>
+		  	<a href="https://bonelliot.com" target="_blank" aria-label="Bon Elliot">BONELLIOT.COM</a>	
+	      	</p>
+	    </div>
+		
+
+	  </div>
 	</section>
 	
-  <div class="lb" id="brandModal" aria-hidden="true">
-    <div class="lb__backdrop" data-close></div>
-
-    <div class="lb__panel" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
-     
-
-      <div class="lb__inner">
-		 <button class="lb__close" type="button" data-close aria-label="Close">×</button>  
-       
-
-        <div class="lb__body">
-		  <div class="lb__kicker" id="lbTitle">BEHIND THE BRAND</div>
-          <p>
-		   Bon Elliot’s origins are in Australia, with a distinctly global perspective. The brand shares the name of Bonnie and our family team of Australian co-founders, working across Sydney and New York.
-<br/><br/>
-		   “I've had the privilege of helping tens of thousands of patients with skin impacted by Australia's unforgiving conditions.” says <a class="modal_link" href="https://drbonniefergie.com/" target="_blank">Dr Bonnie Fergie</a>.
-<br/><br/>
-		   “As I reflected on the common experience of skin becoming increasingly damaged and sensitive over time, I began to search for a path that maximised outer form by prioritising the daily and long-term health of the skin, rooted in the science of the skin’s physiology.”
-<br/><br/>
-		   “What started over 5 years ago has culminated in AMBR Complex™, our patent pending complex to rebalance the skin’s natural health networks — at the foundation of our formulas” says Bonnie of her research.
-<br/><br/>
-		   “Our formulas are proudly made in Sydney, benefiting from Australia’s clean manufacturing environment and rigorous standards, while being proven with leading international independent laboratory clinical trials and testing in Europe and the United States.”
-<br/><br/>
-		   The brand carries the DNA of our family co-founders behind award-winning New York based creative studio <a class="modal_link" href="https://littletroop.com/" target="_blank">Little Troop</a>, known for its culturally resonant and forward-looking design.
-<br/><br/>
-		   Co-founder and creative director Noemie Le Coz, recently inducted into the prestigious Alliance Graphique Internationale, says “As with our formulas, the visual identity of Bon Elliot lies in the skin’s physiology and future-facing lens to skincare that is at the heart of our brand.”
-<br/><br/>
-		   “The unique visual elements of Bon Elliot are a reflection of the depth of our science and craftsmanship of our product, while bearing all the hallmarks of new luxury.”
-<br/><br/>
-		   “Finally, our Australian origins are core to who we are and we wanted that to be true in every aspect. Our launch campaign, inspired by ‘Skin health under the microscope’, was shot in New York with all Australian talent, and alongside accomplished Sydney-born set designer <a class="modal_link" href="https://aliciasciberras.com/" target="_blank">Alicia Sciberras</a>.
-		  <br/><br/> 
-		    While the brand has been designed from two opposite sides of the globe, I was proud to be able to bring an incredible team of Australians together for our launch campaign”.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-	
-  </main>
-  
     <script>
-      (function () {
-        const REQUIRED_PASSWORD = "skinhealth"; // change this
-        const STORAGE_KEY = "bonelliot_access_granted";
+      // 10 quotes (edit these however you like)
+      const QUOTES = [
+        { text: "Dr Bonnie Fergie is an angel in disguise. Great communicator and very human.", by: "Dane C." },
+        { text: "She's practical and patient, a problem solver to support your skin.", by: "Michelle T." },
+        { text: "Thank you Dr Fergie, I know you've changed my life.", by: "S. S." },
+        { text: "Amazingly caring and always up on the latest treatments.", by: "Sunrise E." },
+        { text: "Absolutely amazing. Very patient when explaining things to me.", by: "William H." },
+        { text: "I felt I was in very safe and competent hands.", by: "Brenda A." },
+        { text: "Very professional and able to find effective long-term solutions.", by: "Linda L." },
+        { text: "I cannot thank Dr Bonnie Fergie enough for the incredibly kind, professional and thorough treatment of my skin.", by: "Claudia P." },
+        { text: "Refreshing to experience her manner and her expertise in treating my skin condition. I didn't feel like another number.", by: "P." },
+  	  ];
+      
 
-        const gate = document.getElementById("gate");
-        const form = document.getElementById("gateForm");
-        const input = document.getElementById("gatePassword");
-        const error = document.getElementById("gateError");
+      const textEl = document.getElementById("quoteText");
+      const bylineEl = document.getElementById("quoteByline");
+      const dotsEl = document.querySelector(".quote-dots");
+      const arrows = document.querySelectorAll(".quote-arrow");
 
-        function lockScroll() {
-          document.body.classList.add("is-locked");
-        }
+      let index = 0;
 
-        function unlockScroll() {
-          document.body.classList.remove("is-locked");
-        }
-
-        // Initial state
-        if (localStorage.getItem(STORAGE_KEY) === "true") {
-          gate.setAttribute("aria-hidden", "true");
-          unlockScroll();
-          return;
-        } else {
-          lockScroll();
-        }
-
-        // Focus input on load
-        setTimeout(() => input?.focus(), 50);
-
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          error.textContent = "";
-
-          if (input.value.trim() === REQUIRED_PASSWORD) {
-            localStorage.setItem(STORAGE_KEY, "true");
-            gate.setAttribute("aria-hidden", "true");
-            unlockScroll();
-          } else {
-            error.textContent = "Incorrect password.";
-            input.value = "";
-            input.focus();
-          }
+      function renderDots() {
+        dotsEl.innerHTML = "";
+        QUOTES.forEach((_, i) => {
+          const dot = document.createElement("span");
+          dot.className = "quote-dot" + (i === index ? " is-active" : "");
+          dotsEl.appendChild(dot);
         });
-      })();
-    </script>
-  
-
-    <script>
-      // ===== Auto carousel (every 2 seconds) =====
-      (function () {
-        const root = document.getElementById('productCarousel');
-        if (!root) return;
-
-        const slides = Array.from(root.querySelectorAll('img'));
-        if (slides.length <= 1) return;
-
-        let i = 0;
-        setInterval(() => {
-          slides[i].classList.remove('is-active');
-          i = (i + 1) % slides.length;
-          slides[i].classList.add('is-active');
-        }, 2000);
-      })();
-
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-	
-	<script>
-	  (function () {
-	    let openModalEl = null;
-
-	    function lockScroll() {
-	      document.body.classList.add("is-locked");
-	    }
-
-	    function unlockScroll() {
-	      // Only unlock if gate is not active
-	      const gate = document.getElementById("gate");
-	      const gateHidden = !gate || gate.getAttribute("aria-hidden") === "true";
-	      if (gateHidden) document.body.classList.remove("is-locked");
-	    }
-
-	    function openModal(modal) {
-	      if (!modal) return;
-
-	      // close any currently open modal
-	      if (openModalEl && openModalEl !== modal) closeModal(openModalEl);
-
-	      openModalEl = modal;
-	      modal.classList.add("is-open");
-	      modal.setAttribute("aria-hidden", "false");
-	      lockScroll();
-	    }
-
-	    function closeModal(modal) {
-	      if (!modal) return;
-
-	      modal.classList.remove("is-open");
-	      modal.setAttribute("aria-hidden", "true");
-	      if (openModalEl === modal) openModalEl = null;
-
-	      unlockScroll();
-	    }
-
-	    // Open: click any element with data-modal="#someId"
-	    document.addEventListener("click", (e) => {
-	      const trigger = e.target.closest("[data-modal]");
-	      if (!trigger) return;
-
-	      e.preventDefault();
-	      const selector = trigger.getAttribute("data-modal");
-	      openModal(document.querySelector(selector));
-	    });
-
-	    // Close: click backdrop / X
-	    document.addEventListener("click", (e) => {
-		  const isBackdrop = e.target.matches(".modal__backdrop, .lb__backdrop");
-	      const closeBtn = e.target.closest("[data-close]");
-	      if (!closeBtn) return;
-
-	      const modal = e.target.closest(".modal, .lb");
-		  if (!modal) return; // safety
-		  closeModal(modal);
-	    });
-
-	    // Close: ESC key closes whichever is open
-	    document.addEventListener("keydown", (e) => {
-	      if (e.key === "Escape" && openModalEl) closeModal(openModalEl);
-	    });
-		
-		document.addEventListener("click", (e) => {
-		  if (e.target.classList.contains("lb__backdrop")) {
-		    console.log("Backdrop clicked ✅");
-		  }
-		});
-	  })();
-	</script>
-	
-  
-  <script>
-    // --- Klaviyo list subscribe (client-side form post) ---
-    // Find these in Klaviyo:
-    // - "Public API Key / Site ID" (sometimes called public token)
-    // - List ID (the list you want to add subscribers to)
-    const KLAVIYO_PUBLIC_TOKEN = "TefECp";
-    const LIST_ID = "T2gpGK";
-
-    const form = document.getElementById("klaviyoSignup");
-    const msg = document.getElementById("signupMsg");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      msg.textContent = "Submitting…";
-
-      const email = document.getElementById("email").value.trim();
-
-      // Klaviyo endpoint commonly used for custom forms
-      const url = "https://manage.kmail-lists.com/ajax/subscriptions/subscribe";
-
-      const fd = new FormData();
-      fd.append("g", LIST_ID);                  // list ID
-      fd.append("$fields", "email");            // fields you’re sending
-      fd.append("email", email);
-      fd.append("source", "Website signup");    // optional
-      fd.append("a", KLAVIYO_PUBLIC_TOKEN);     // public token / account identifier
-
-      try {
-        const res = await fetch(url, { method: "POST", body: fd });
-        const data = await res.json();
-
-        // Klaviyo returns a JSON object with a success flag/message
-        if (data.success) {
-          msg.textContent = "Thanks — you’re on the list.";
-          form.reset();
-        } else {
-          msg.textContent = data.message || "Couldn’t subscribe. Please try again.";
-        }
-      } catch (err) {
-        msg.textContent = "Network error. Please try again.";
       }
-    });
-  </script>
 
+      function renderQuote() {
+        const q = QUOTES[index];
+        textEl.textContent = `“${q.text}”`;
+        bylineEl.textContent = q.by;
+        renderDots();
+      }
 
+      function move(dir) {
+        index = (index + dir + QUOTES.length) % QUOTES.length;
+        renderQuote();
+      }
+
+      arrows.forEach((btn) => {
+        btn.addEventListener("click", () => move(parseInt(btn.dataset.dir, 10)));
+      });
+
+      // Optional: keyboard support (left/right arrows)
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") move(-1);
+        if (e.key === "ArrowRight") move(1);
+      });
+
+      renderQuote();
+    </script>
+  </body>
   
-</body>
+  
+  
 </html>
-
-
